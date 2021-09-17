@@ -67,8 +67,6 @@ truffle test
 ```
 All 10 tests should pass (but it depends on the solidity version)
 
-![truffle test](images/truffle_test.png)
-
 
 To Migrate smart contracts to the rinkeby:
 
