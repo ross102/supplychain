@@ -238,9 +238,9 @@ contract('SupplyChain',  function(accounts) {
         
         // Watch the emitted event Received()
          var event = supplyChain.Received();
-           event.on('data', (event) => {
-               eventEmitted = true;
-           })       
+         event.watch((err, data) => {
+            eventEmitted = true
+       })      
 
         // Mark an item as Sold by calling function receiveItem()
           await supplyChain.receiveItem(upc, {from: retailerID});
@@ -268,7 +268,7 @@ contract('SupplyChain',  function(accounts) {
         
         // Watch the emitted event Purchased()
         var event = supplyChain.Purchased();
-        event.on('data', (event) => {
+        event.watch((err, data) => {
              eventEmitted = true
         })        
 

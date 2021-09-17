@@ -7,9 +7,10 @@ var SupplyChain = artifacts.require("./SupplyChain.sol");
 var Ownable = artifacts.require("./Ownable.sol")
 
 module.exports = function(deployer) {
-  deployer.deploy(FarmerRole);
-  deployer.deploy(DistributorRole);
-  deployer.deploy(RetailerRole);
-  deployer.deploy(ConsumerRole);
+  // deployer.deploy(FarmerRole);
+  // deployer.deploy(DistributorRole);
+  // deployer.deploy(RetailerRole);
+  // deployer.deploy(ConsumerRole);
   deployer.deploy(SupplyChain);
 };
+ 

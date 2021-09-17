@@ -251,7 +251,6 @@ contract SupplyChain is  DistributorRole, RetailerRole, ConsumerRole, FarmerRole
   function buyItem(uint _upc) public payable 
   
  
-  onlyDistributor 
    forSale(_upc) 
    paidEnough(items[_upc].productPrice)
    checkValue(_upc)
