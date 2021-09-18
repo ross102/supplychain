@@ -50,7 +50,10 @@ Install packages
 ```
 npm install
 
+npm install -g truffle@4.1.17
+
 ```
+
 
 Connect to the ganache-cli
 
