@@ -13,7 +13,6 @@ This project was deployed on the rinkeby testnet.
 
 ```
 
-
 ## UML Diagrams
 Activity Diagram
 ![activity Diagram](images/activityDiagram.png)
@@ -31,6 +30,12 @@ Class Diagram
 
 
 ###  Runing the project
+
+Truffle is used in this project because it makes development easier
+and also it is an asset pipeline for ethereum
+
+Web3.js is a collection of libraries for interacting with an ethereum node
+
 
 versions used:
 

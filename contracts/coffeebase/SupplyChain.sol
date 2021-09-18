@@ -8,7 +8,7 @@ import "../coffeecore/Ownable.sol";
 
 
 // Define a contract 'Supplychain'
-contract SupplyChain is  DistributorRole, RetailerRole, ConsumerRole, FarmerRole {
+contract SupplyChain is ConsumerRole,  RetailerRole, DistributorRole, FarmerRole {
 
   // Define 'owner'
   address  owner;
@@ -248,12 +248,14 @@ contract SupplyChain is  DistributorRole, RetailerRole, ConsumerRole, FarmerRole
     // Call modifer to check if buyer has paid enough
     
     // Call modifer to send any excess ether back to buyer
-  function buyItem(uint _upc) public payable 
-  
+
  
-   forSale(_upc) 
-   paidEnough(items[_upc].productPrice)
-   checkValue(_upc)
+  function buyItem(uint _upc) public payable
+  
+    onlyDistributor
+    forSale(_upc) 
+    paidEnough(items[_upc].productPrice)
+    checkValue(_upc)
  
    
     {
@@ -277,7 +279,7 @@ contract SupplyChain is  DistributorRole, RetailerRole, ConsumerRole, FarmerRole
     
     // Call modifier to verify caller of this function
 
-  function shipItem(uint _upc) public
+  function shipItem(uint _upc) public payable
       onlyDistributor 
       sold(_upc) 
     {
