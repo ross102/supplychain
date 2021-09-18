@@ -92,7 +92,7 @@ npm run dev
 ```
 
 
-Available Accounts
+Available Accounts obtained from ganache phrase above
 
     ```
 Contract Owner -   (0) 0x27d8d15cbc94527cadf5ec14b69519ae23288b95
@@ -107,7 +107,9 @@ Consumer       -   (4) 0xd37b7b8c62be2fdde8daa9816483aebdbd356088
     
     ```
 
+Hosted using fleek
 
+[ipfs link](https://ipfs.io/ipfs/QmdRQp4asGSYzDXW76vq5H7isR6mB8wK9vH8x1pQ81C4Ym/)
 
 
 
